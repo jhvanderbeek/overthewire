@@ -1,0 +1,4 @@
+strings data.txt | grep "^==\+"
+# ^ anchors to the start of the string
+# ==\+ matches at least 3 equals signs
+truKLdjsbJ5g7yyJ2X2R0o3a5HQJFuLk
