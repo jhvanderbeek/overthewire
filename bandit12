@@ -1,8 +1,0 @@
-# make a new directory in tmp and copy the password there
-mkdir /tmp/averygooddirectory
-cd /tmp/averygooddirectory
-cp ~/data.txt .
-
-# reverse the hexdump
-xxd -r data.txt temp
-
