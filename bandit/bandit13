@@ -1,0 +1,7 @@
+# Copy the private key contained in bandit13's home directory here
+scp -P 2220 bandit13@bandit.labs.overthewire.org:~/sshkey.private .
+
+# Access bandit14 with that private key
+ssh -i sshkey.private -p 2220 bandit14@bandit.labs.overthewire.org
+
+#bandit14 password is 4wcYUJFw0k0XLShlDzztnTBHiqxU3b3e

@@ -1,0 +1,6 @@
+# While on bandit14
+cat /etc/bandit_pass/bandit14
+telnet localhost 30000
+# paste in password
+
+BfMYroe26WYalil77FoDi9qh59eK5xNr
