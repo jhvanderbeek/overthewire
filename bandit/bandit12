@@ -1,8 +1,26 @@
+#!/bin/bash
+
 # make a new directory in tmp and copy the password there
-mkdir /tmp/averygooddirectory
-cd /tmp/averygooddirectory
+dirname=/tmp/averygooddirectory$RANDOM
+mkdir $dirname
+cd $dirname
 cp ~/data.txt .
 
 # reverse the hexdump
 xxd -r data.txt temp
 
+# TODO turn this into a proper script
+
+# The filetype should be one of the following strings
+gzipstring="gzip compressed data"
+bzipstring="bzip2 compressed data"
+tarstring="POSIX tar archive"
+
+## For gzipped files
+# zcat -c <dataX> > dataX+1
+
+## For tarred files
+# tar -xvf <filename>
+# result is saved as <original file name>
+
+# The password is 8ZjyCRiBWFYkneahHwxCv3wb2a1ORpYL
