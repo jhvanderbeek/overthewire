@@ -1,4 +1,9 @@
-# This one is a little weird. The executable bandit20-do has the 
+# This one is a little weird. I spent ages trying to run "setuid" in bash
+# That is not the way! A setuid binary is one that has the 'setuid' bit set to on.
+# This means that anyone with permission to execute the file does so with the
+# permissions of the UserID. Similarly you can set the 'setgid' bit to make it
+# so that anyone who can execute the file does so with the privileges of the group.
+# To set these bits use chmod 4000 and chmod 2000 respectively. 
 
 ./bandit20-do cat /etc/bandit_pass/bandit20
 
