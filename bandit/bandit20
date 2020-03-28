@@ -1,0 +1,14 @@
+# In this one you have to set up a two processed A and B. First on 
+# A run the command:
+nc -l -p 12345
+# This listens on port 12345.
+# Then on B run:
+./suconnect 12345
+# This gets B to connect to A
+# Next on A paste in the password from last time. Then B will hear 
+# this and respond with the next password
+
+# To set up two processes you can either use tmux or have two jobs
+# running on the same shell and switch between them with bg and fg.
+
+gE269g2h3mw3pwgrj0Ha9Uoqen1c9DGr
