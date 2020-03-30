@@ -1,0 +1,19 @@
+# Like with bandit21 check in /etc/cron.d to see what file is being executed
+cat /usr/bin/cronjob_bandit23.sh
+
+# This outputs
+#!/bin/bash
+
+myname=$(whoami)
+mytarget=$(echo I am user $myname | md5sum | cut -d ' ' -f 1)
+
+echo "Copying passwordfile /etc/bandit_pass/$myname to /tmp/$mytarget"
+
+cat /etc/bandit_pass/$myname > /tmp/$mytarget
+
+# If you run this file it will copy the password for bandit22 into a tmp folder
+# So you just need to figure out what gets when bandit23 runs it
+mytarget=$(echo I am user bandit23 | md5sum | cut -d ' ' -f 1)
+cat /tmp/8ca319486bfbbc3663ea0fbe81326349
+
+jc1udXuA1tiHqjIsL8yaapX5XIAI6i0n
