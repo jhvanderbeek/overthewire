@@ -1,0 +1,5 @@
+find -exec file {} +
+# this finds all files and executes the 'file' command taking each filename as an argument
+
+find -exec file {} + | grep ASCII
+# this does the same but pipes the results to grep which filters for the word ASCII

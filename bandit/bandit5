@@ -1,0 +1,3 @@
+find -size 1033c | xargs cat
+# This looks for all files that are 1033 bytes long and then pipes the output to cat
+# We need xargs to turn the stdout stream from find into a list of arguments for cat
